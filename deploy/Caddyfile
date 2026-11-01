@@ -1,0 +1,5 @@
+# HTTPS automatique (Let's Encrypt). Remplacer par votre domaine.
+votre-domaine.sn {
+	encode gzip
+	reverse_proxy 127.0.0.1:3000
+}

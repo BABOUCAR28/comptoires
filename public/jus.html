@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jus naturels sur commande — Le Comptoir des Belles Saveurs</title>
+<meta name="description" content="Jus de bissap, bouye, gingembre, mangue, ananas et plus encore — en 330 ml et 1,5 L, préparés sur commande en FCFA.">
+<link rel="canonical" href="/jus">
+<meta property="og:title" content="Jus naturels — Le Comptoir des Belles Saveurs">
+<meta property="og:description" content="Jus naturels sénégalais préparés sur commande. Disponibles en 330 ml et 1,5 L.">
+<meta name="theme-color" content="#6B3825">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Aller au contenu</a>
+
+<!-- ══ HEADER ══ -->
+<header>
+  <div class="w navbar">
+    <a class="logo" href="/">
+      <span class="logo-img-slot"></span>
+      <span class="logo-txt">Le Comptoir des Belles Saveurs<small>Sur commande uniquement</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="/">Accueil</a>
+      <a href="/sucres">Beignets sucrés</a>
+      <a href="/sales">Beignets salés</a>
+      <a href="/fatayas">Fatayas</a>
+      <a href="/jus" class="active">Jus naturels</a>
+      <a href="/evenements">Événements</a>
+      <a href="/apropos">À propos</a>
+      <a href="/contact">Contact</a>
+      <a href="/contact" class="nav-cta">Commander&nbsp;<span id="cart-count" style="background:rgba(255,255,255,.25);border-radius:999px;padding:1px 7px;font-size:.75rem">0</span></a>
+    </nav>
+    <button id="menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-mobile">☰</button>
+  </div>
+  <nav class="nav-mobile" id="nav-mobile" aria-label="Menu mobile">
+    <a href="/">Accueil</a>
+    <a href="/sucres">Beignets sucrés</a>
+    <a href="/sales">Beignets salés</a>
+    <a href="/fatayas">Fatayas</a>
+    <a href="/jus" class="active">Jus naturels</a>
+    <a href="/evenements">Événements</a>
+    <a href="/apropos">À propos</a>
+    <a href="/contact">Contact / Commander</a>
+  </nav>
+</header>
+
+<!-- ══ MAIN ══ -->
+<main id="main">
+  <section>
+    <div class="w">
+      <div class="breadcrumb"><a href="/">Accueil</a> › <span>Jus naturels</span></div>
+      <h1>🥤 Jus naturels</h1>
+      <p style="color:var(--tx2)">Jus préparés à base de fruits et plantes naturels du Sénégal. Disponibles en <strong>330 ml</strong> et <strong>1,5 L</strong>, exclusivement sur commande.</p>
+
+      <div class="note">
+        <strong>⏱ Préparation exclusivement sur commande.</strong>
+        Nos jus sont préparés frais sur commande — ils ne sont pas disponibles immédiatement.
+      </div>
+
+      <!-- Formats disponibles -->
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin:16px 0 24px">
+        <div style="background:var(--blanc);border:2px solid var(--orange);border-radius:var(--r);padding:14px 20px;text-align:center;min-width:130px">
+          <div style="font-size:1.8rem">🥤</div>
+          <div style="font-weight:700;color:var(--marron);margin-top:4px">330 ml</div>
+          <div style="font-size:.82rem;color:var(--txt-sec)">Format individuel</div>
+        </div>
+        <div style="background:var(--blanc);border:2px solid var(--marron);border-radius:var(--r);padding:14px 20px;text-align:center;min-width:130px">
+          <div style="font-size:1.8rem">🍶</div>
+          <div style="font-weight:700;color:var(--marron);margin-top:4px">1,5 L</div>
+          <div style="font-size:.82rem;color:var(--txt-sec)">Format famille / événement</div>
+        </div>
+      </div>
+
+      <div class="btn-row" style="margin-bottom:24px">
+        <a class="btn btn-w" id="wa-cat-btn" href="/contact" style="display:none">💬 Commander par WhatsApp</a>
+        <a class="btn btn-m" href="/contact">📨 Formulaire de commande</a>
+      </div>
+
+      <!-- Barre de recherche -->
+      <div class="search-wrap" id="search-wrap" style="display:none">
+        <input type="search" id="cat-search" placeholder="Rechercher un jus…" aria-label="Rechercher un jus">
+      </div>
+
+      <!-- Grille dynamique — tous les jus depuis l'admin -->
+      <div class="grid" id="prod-grid">
+        <div style="grid-column:1/-1;text-align:center;padding:30px;color:var(--txt-sec)">
+          <div style="font-size:2rem;margin-bottom:10px">⏳</div>
+          Chargement des jus…
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="w">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <strong>Le Comptoir des Belles Saveurs</strong>
+        <p>Le goût du bonheur, à chaque bouchée !<br>Tous nos produits sont préparés exclusivement sur commande.</p>
+        <div class="social-row" id="footer-social"></div>
+      </div>
+      <div class="footer-col">
+        <h4>Nos spécialités</h4>
+        <a href="/sucres">Beignets sucrés</a>
+        <a href="/sales">Beignets salés</a>
+        <a href="/fatayas">Fatayas</a>
+        <a href="/jus">Jus naturels</a>
+        <a href="/evenements">Commandes événementielles</a>
+      </div>
+      <div class="footer-col">
+        <h4>Informations</h4>
+        <a href="/">Accueil</a>
+        <a href="/apropos">À propos</a>
+        <a href="/contact">Contact / Commander</a>
+        <a href="/legal">Mentions légales</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p id="footer-contact-info">Coordonnées à compléter</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="yr"></span> Le Comptoir des Belles Saveurs</span>
+      <a href="/legal" style="color:inherit">Mentions légales &amp; confidentialité</a>
+    </div>
+  </div>
+</footer>
+
+<a id="wa-float" href="/contact" aria-label="Nous contacter sur WhatsApp">💬</a>
+<script src="/app.js"></script>
+</body>
+</html>

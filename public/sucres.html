@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Beignets sucrés sur commande — Le Comptoir des Belles Saveurs</title>
+<meta name="description" content="Nos beignets sucrés avec prix unitaires en FCFA, préparés exclusivement sur commande.">
+<link rel="canonical" href="/sucres">
+<meta property="og:title" content="Beignets sucrés — Le Comptoir des Belles Saveurs">
+<meta property="og:description" content="Beignets sucrés préparés exclusivement sur commande. Commandez par WhatsApp ou formulaire.">
+<meta name="theme-color" content="#6B3825">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<header>
+  <div class="w navbar">
+    <a class="logo" href="/"><span class="logo-img-slot"></span><span class="logo-txt">Le Comptoir des Belles Saveurs<small>Sur commande uniquement</small></span></a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="/">Accueil</a><a href="/sucres" class="active">Beignets sucrés</a><a href="/sales">Beignets salés</a><a href="/fatayas">Fatayas</a><a href="/jus">Jus naturels</a><a href="/evenements">Événements</a><a href="/apropos">À propos</a><a href="/contact">Contact</a>
+      <a href="/contact" class="nav-cta">Commander&nbsp;<span id="cart-count" style="background:rgba(255,255,255,.25);border-radius:999px;padding:1px 7px;font-size:.75rem">0</span></a>
+    </nav>
+    <button id="menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-mobile">☰</button>
+  </div>
+  <nav class="nav-mobile" id="nav-mobile" aria-label="Menu mobile">
+    <a href="/">Accueil</a><a href="/sucres" class="active">Beignets sucrés</a><a href="/sales">Beignets salés</a><a href="/fatayas">Fatayas</a><a href="/jus">Jus naturels</a><a href="/evenements">Événements</a><a href="/apropos">À propos</a><a href="/contact">Contact / Commander</a>
+  </nav>
+</header>
+
+<main id="main">
+  <section>
+    <div class="w">
+      <div class="breadcrumb"><a href="/">Accueil</a> › <span>Beignets sucrés</span></div>
+      <h1>🍩 Beignets sucrés</h1>
+      <p style="color:var(--txt-sec)">Moelleux et gourmands, pour vos pauses sucrées, goûters et moments de partage — préparés exclusivement sur commande.</p>
+
+      <div class="note">
+        <strong>⏱ Préparation exclusivement sur commande.</strong>
+        Nos beignets ne sont pas disponibles immédiatement — chaque commande est préparée spécialement pour vous.
+      </div>
+
+      <div class="btn-row" style="margin-bottom:28px">
+        <a class="btn btn-w" id="wa-cat-btn" href="/contact" style="display:none">💬 Commander par WhatsApp</a>
+        <a class="btn btn-m" href="/contact">📨 Formulaire de commande</a>
+        <a class="btn btn-m" href="/evenements">🎉 Commander pour un événement</a>
+      </div>
+
+      <div id="prod-grid" class="grid">
+        <div style="grid-column:1/-1;text-align:center;padding:30px;color:var(--txt-sec)">
+          <div style="font-size:2rem;margin-bottom:10px">⏳</div>
+          Chargement des produits…
+        </div>
+      </div>
+
+            <!-- Section événements -->
+      <div style="background:var(--marron);color:var(--creme);border-radius:var(--r2);padding:28px 24px;margin-top:40px">
+        <h2 style="color:var(--creme-card);margin-bottom:8px">🎉 Commander pour un événement ?</h2>
+        <p style="opacity:.9;margin-bottom:16px">Anniversaires, mariages, baptêmes, cérémonies — nous préparons vos beignets en grande quantité, sur devis.</p>
+        <a class="btn" href="/evenements">Demander un devis événement</a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="w">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <strong>Le Comptoir des Belles Saveurs</strong>
+        <p>Le goût du bonheur, à chaque bouchée !<br>Tous nos produits sont préparés exclusivement sur commande.</p>
+        <div class="social-row" id="footer-social"></div>
+      </div>
+      <div class="footer-col">
+        <h4>Nos spécialités</h4>
+        <a href="/sucres">Beignets sucrés</a><a href="/sales">Beignets salés</a><a href="/fatayas">Fatayas</a><a href="/jus">Jus naturels</a><a href="/evenements">Commandes événementielles</a>
+      </div>
+      <div class="footer-col">
+        <h4>Informations</h4>
+        <a href="/">Accueil</a><a href="/apropos">À propos</a><a href="/contact">Contact / Commander</a><a href="/legal">Mentions légales</a>
+      </div>
+      <div class="footer-col"><h4>Contact</h4><p id="footer-contact-info">Coordonnées à compléter</p></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="yr"></span> Le Comptoir des Belles Saveurs</span>
+      <a href="/legal" style="color:inherit">Mentions légales &amp; confidentialité</a>
+    </div>
+  </div>
+</footer>
+<a id="wa-float" href="/contact" aria-label="WhatsApp">💬</a>
+<script src="/app.js"></script>
+</body>
+</html>

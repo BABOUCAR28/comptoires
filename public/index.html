@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Le Comptoir des Belles Saveurs — Beignets et fatayas sur commande</title>
+<meta name="description" content="Beignets sucrés, beignets salés, fatayas et jus naturels préparés exclusivement sur commande à Dakar. Prix en FCFA, commande par WhatsApp ou formulaire.">
+<link rel="canonical" href="/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Le Comptoir des Belles Saveurs">
+<meta property="og:description" content="Le goût du bonheur, à chaque bouchée !">
+<meta name="theme-color" content="#6B3825">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<!-- ══ HEADER ══ -->
+<header>
+  <div class="w navbar">
+    <a class="logo" href="/"><span class="logo-img-slot"></span><span class="logo-txt">Le Comptoir des Belles Saveurs<small>Sur commande uniquement</small></span></a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="/" class="active">Accueil</a>
+      <a href="/sucres">Beignets sucrés</a>
+      <a href="/sales">Beignets salés</a>
+      <a href="/fatayas">Fatayas</a>
+      <a href="/jus">Jus naturels</a>
+      <a href="/evenements">Événements</a>
+      <a href="/apropos">À propos</a>
+      <a href="/contact">Contact</a>
+      <a href="/contact" class="nav-cta">Commander&nbsp;<span id="cart-count" style="background:rgba(255,255,255,.25);border-radius:999px;padding:1px 7px;font-size:.75rem">0</span></a>
+    </nav>
+    <button id="menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-mobile">☰</button>
+  </div>
+  <nav class="nav-mobile" id="nav-mobile" aria-label="Menu mobile">
+    <a href="/" class="active">Accueil</a>
+    <a href="/sucres">Beignets sucrés</a>
+    <a href="/sales">Beignets salés</a>
+    <a href="/fatayas">Fatayas</a>
+    <a href="/jus">Jus naturels</a>
+    <a href="/evenements">Événements</a>
+    <a href="/apropos">À propos</a>
+    <a href="/contact">Contact / Commander</a>
+  </nav>
+</header>
+
+<!-- ══ MAIN ══ -->
+<main id="main">
+
+  <!-- ── HERO ── -->
+  <div class="hero">
+    <div class="w">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-tag" id="hero-slogan">Le goût du bonheur, à chaque bouchée !</div>
+          <h1>Le Comptoir des Belles Saveurs</h1>
+          <p id="hero-texte">Beignets sucrés, beignets salés, fatayas et jus naturels — préparés exclusivement sur commande. Pour vos pauses gourmandes, vos moments en famille ou vos événements.</p>
+          <div class="hero-badge"><span>⏱</span> <strong>Préparés exclusivement sur commande</strong></div>
+          <div class="btn-row">
+            <a class="btn" href="/sucres">🍽 Découvrir nos produits</a>
+            <a class="btn btn-olw" href="/contact">📨 Passer une commande</a>
+            <a class="btn" style="background:rgba(255,255,255,.15);border:2px solid rgba(255,255,255,.45)" href="/evenements">🎉 Commander pour mon événement</a>
+          </div>
+          <div class="btn-row" style="margin-top:8px">
+            <a class="btn btn-w" id="wa-home-btn" href="/contact" style="display:none">💬 Nous contacter sur WhatsApp</a>
+          </div>
+        </div>
+        <div>
+          <div id="hero-img-wrap" class="hero-img-ph">🍩</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ANNONCE ── -->
+  <div class="announce" id="annonce-bar">
+    ✨ Commandes spéciales pour mariages, anniversaires, baptêmes et événements —
+    <a href="/evenements">Demander un devis</a>
+  </div>
+
+  <!-- ── NOS SPÉCIALITÉS ── -->
+  <section>
+    <div class="w">
+      <h2>Nos spécialités</h2>
+      <p style="color:var(--txt-sec);margin-bottom:24px">Quatre catégories de délices, tous préparés sur commande exclusivement pour vous.</p>
+      <div class="grid">
+
+        <a class="cat-card" href="/sucres">
+          <div class="cat-card-img" id="cat-img-sucres">
+            <span>🍩</span><div class="cat-card-overlay"></div>
+          </div>
+          <div class="cat-card-body">
+            <h3>🍩 Beignets sucrés</h3>
+            <p>Moelleux et gourmands, pour vos pauses sucrées et moments de partage.</p>
+            <span class="btn btn-sm" style="margin-top:10px">Découvrir →</span>
+          </div>
+        </a>
+
+        <a class="cat-card" href="/sales">
+          <div class="cat-card-img" id="cat-img-sales">
+            <span>🥟</span><div class="cat-card-overlay"></div>
+          </div>
+          <div class="cat-card-body">
+            <h3>🥟 Beignets salés</h3>
+            <p>Croustillants et savoureux, parfaits pour petites et grandes faims.</p>
+            <span class="btn btn-sm" style="margin-top:10px">Découvrir →</span>
+          </div>
+        </a>
+
+        <a class="cat-card" href="/fatayas">
+          <div class="cat-card-img" id="cat-img-fatayas">
+            <span>🥠</span><div class="cat-card-overlay"></div>
+          </div>
+          <div class="cat-card-body">
+            <h3>🥠 Fatayas</h3>
+            <p>Chaussons garnis avec soin : poulet, poisson, légumes, viande…</p>
+            <span class="btn btn-sm" style="margin-top:10px">Découvrir →</span>
+          </div>
+        </a>
+
+        <a class="cat-card" href="/jus">
+          <div class="cat-card-img" id="cat-img-jus">
+            <span>🥤</span><div class="cat-card-overlay"></div>
+          </div>
+          <div class="cat-card-body">
+            <h3>🥤 Jus naturels</h3>
+            <p>Bissap, bouye, gingembre, mangue et plus encore — en 330 ml et 1,5 L.</p>
+            <span class="btn btn-sm" style="margin-top:10px">Découvrir →</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── QUELQUES PRODUITS ── -->
+  <section class="alt">
+    <div class="w">
+      <h2>Quelques produits à découvrir</h2>
+      <p style="color:var(--txt-sec);margin-bottom:24px">Une sélection de nos spécialités — tous préparés sur commande.</p>
+
+      <!-- Produits dynamiques depuis l'admin -->
+      <div class="grid" id="home-prod-grid">
+        <div style="grid-column:1/-1;text-align:center;padding:20px;color:var(--txt-sec)">Chargement du catalogue…</div>
+        <div class="prod-card">
+          <div class="prod-img"><div class="prod-img-ph"><span>🍩</span><small>Beignets sucrés</small></div></div>
+          <div class="prod-body"><h3>Beignets sucrés</h3><p>Moelleux et gourmands, préparés à la commande.</p><div class="prod-price"><em style="color:var(--txt-sec)">Prix à confirmer</em></div><div class="prod-meta">Délai à confirmer</div><div class="prod-actions"><a class="btn btn-sm" href="/sucres">Voir les beignets sucrés</a></div></div>
+        </div>
+        <div class="prod-card">
+          <div class="prod-img"><div class="prod-img-ph"><span>🥟</span><small>Beignets salés</small></div></div>
+          <div class="prod-body"><h3>Beignets salés</h3><p>Croustillants avec différentes garnitures selon disponibilité.</p><div class="prod-price"><em style="color:var(--txt-sec)">Prix à confirmer</em></div><div class="prod-meta">Délai à confirmer</div><div class="prod-actions"><a class="btn btn-sm" href="/sales">Voir les beignets salés</a></div></div>
+        </div>
+        <div class="prod-card">
+          <div class="prod-img"><div class="prod-img-ph"><span>🥠</span><small>Fatayas</small></div></div>
+          <div class="prod-body"><h3>Fatayas</h3><p>Chaussons garnis : poulet, poisson, légumes, viande…</p><div class="prod-price"><em style="color:var(--txt-sec)">Prix à confirmer</em></div><div class="prod-meta">Délai à confirmer</div><div class="prod-actions"><a class="btn btn-sm" href="/fatayas">Voir les fatayas</a></div></div>
+        </div>
+        <div class="prod-card">
+          <div class="prod-img"><div class="prod-img-ph"><span>🌺</span><small>Bissap</small></div></div>
+          <div class="prod-body"><h3>Jus de bissap</h3><p>Jus d'hibiscus rouge, acidulé et rafraîchissant. En 330 ml et 1,5 L.</p><div class="prod-price"><em style="color:var(--txt-sec)">Prix à confirmer</em></div><div class="prod-meta">330 ml · 1,5 L</div><div class="prod-actions"><a class="btn btn-sm" href="/jus">Voir les jus</a></div></div>
+        </div>
+        <div class="prod-card">
+          <div class="prod-img"><div class="prod-img-ph"><span>🥭</span><small>Mangue</small></div></div>
+          <div class="prod-body"><h3>Jus de mangue</h3><p>Jus onctueux et fruité, préparé avec des mangues bien mûres.</p><div class="prod-price"><em style="color:var(--txt-sec)">Prix à confirmer</em></div><div class="prod-meta">330 ml · 1,5 L</div><div class="prod-actions"><a class="btn btn-sm" href="/jus">Voir les jus</a></div></div>
+        </div>
+        <div class="prod-card">
+          <div class="prod-img"><div class="prod-img-ph"><span>🫚</span><small>Gingembre</small></div></div>
+          <div class="prod-body"><h3>Jus de gingembre</h3><p>Jus piquant et tonique, idéal pour se revitaliser.</p><div class="prod-price"><em style="color:var(--txt-sec)">Prix à confirmer</em></div><div class="prod-meta">330 ml · 1,5 L</div><div class="prod-actions"><a class="btn btn-sm" href="/jus">Voir les jus</a></div></div>
+        </div>
+      </div>
+
+      <div class="btn-row" style="margin-top:24px">
+        <a class="btn" href="/sucres">Beignets sucrés</a>
+        <a class="btn btn-m" href="/sales">Beignets salés</a>
+        <a class="btn btn-m" href="/fatayas">Fatayas</a>
+        <a class="btn btn-m" href="/jus">Jus naturels</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ÉVÉNEMENTS ── -->
+  <section class="dark">
+    <div class="w">
+      <h2>Pour vos événements</h2>
+      <p style="opacity:.85;margin-bottom:24px">Anniversaires, mariages, baptêmes, cérémonies, réunions — nous préparons vos commandes en quantité, sur devis personnalisé.</p>
+      <div class="ev-grid">
+        <div class="ev-item"><span class="ev-icon">🎂</span>Anniversaires</div>
+        <div class="ev-item"><span class="ev-icon">💍</span>Mariages</div>
+        <div class="ev-item"><span class="ev-icon">🍼</span>Baptêmes</div>
+        <div class="ev-item"><span class="ev-icon">👨‍👩‍👧‍👦</span>Réunions familiales</div>
+        <div class="ev-item"><span class="ev-icon">🎉</span>Cérémonies</div>
+        <div class="ev-item"><span class="ev-icon">🏢</span>Réunions d'entreprise</div>
+        <div class="ev-item"><span class="ev-icon">✨</span>Autres événements</div>
+      </div>
+      <div class="btn-row" style="margin-top:28px">
+        <a class="btn" href="/evenements">🎉 Demander un devis événement</a>
+        <a class="btn btn-w" id="wa-ev-btn" href="/contact" style="display:none">💬 WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ENGAGEMENTS ── -->
+  <section>
+    <div class="w">
+      <h2>Nos engagements</h2>
+      <div class="commit-grid">
+        <div class="commit-card">
+          <div class="commit-icon">⏱</div>
+          <h4>Préparation sur commande</h4>
+          <p>Chaque produit est préparé spécialement pour vous, jamais à l'avance.</p>
+        </div>
+        <div class="commit-card">
+          <div class="commit-icon">💰</div>
+          <h4>Tarifs transparents</h4>
+          <p>Prix unitaire en FCFA affiché sur chaque produit. Devis personnalisé pour les événements.</p>
+        </div>
+        <div class="commit-card">
+          <div class="commit-icon">✨</div>
+          <h4>Commandes personnalisées</h4>
+          <p>Précisez vos besoins et demandes particulières. Nous adaptons chaque commande.</p>
+        </div>
+        <div class="commit-card">
+          <div class="commit-icon">✅</div>
+          <h4>Confirmation avant validation</h4>
+          <p>Disponibilité, prix final et délais confirmés par l'entreprise avant toute commande définitive.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="w">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <strong>Le Comptoir des Belles Saveurs</strong>
+        <p>Le goût du bonheur, à chaque bouchée !<br>Tous nos produits sont préparés exclusivement sur commande.</p>
+        <div class="social-row" id="footer-social"></div>
+      </div>
+      <div class="footer-col">
+        <h4>Nos spécialités</h4>
+        <a href="/sucres">Beignets sucrés</a>
+        <a href="/sales">Beignets salés</a>
+        <a href="/fatayas">Fatayas</a>
+        <a href="/jus">Jus naturels</a>
+        <a href="/evenements">Commandes événementielles</a>
+      </div>
+      <div class="footer-col">
+        <h4>Informations</h4>
+        <a href="/">Accueil</a>
+        <a href="/apropos">À propos</a>
+        <a href="/contact">Contact / Commander</a>
+        <a href="/legal">Mentions légales</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p id="footer-contact-info">Coordonnées à compléter</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="yr"></span> Le Comptoir des Belles Saveurs</span>
+      <a href="/legal" style="color:inherit">Mentions légales &amp; confidentialité</a>
+    </div>
+  </div>
+</footer>
+
+<a id="wa-float" href="/contact" aria-label="Nous contacter sur WhatsApp">💬</a>
+<script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+# Blueprint Render : New > Blueprint > choisir le dépôt GitHub. Les secrets se saisissent dans le tableau de bord.
+services:
+  - type: web
+    name: comptoir-des-belles-saveurs
+    runtime: node
+    plan: free
+    buildCommand: "echo aucune dépendance"
+    startCommand: node server.js
+    healthCheckPath: /healthz
+    envVars:
+      - { key: NODE_ENV, value: production }
+      - { key: TRUST_PROXY, value: "1" }
+      - { key: SITE_URL, sync: false }
+      - { key: SUPABASE_URL, sync: false }
+      - { key: SUPABASE_SERVICE_KEY, sync: false }
+      - { key: SESSION_SECRET, generateValue: true }

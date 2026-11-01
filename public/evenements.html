@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Commandes pour événements — Le Comptoir des Belles Saveurs</title>
+<meta name="description" content="Anniversaires, mariages, baptêmes, cérémonies, réunions : demandez un devis pour vos grandes quantités.">
+<link rel="canonical" href="/evenements">
+<meta property="og:title" content="Commandes pour événements — Le Comptoir des Belles Saveurs">
+<meta name="theme-color" content="#6B3825">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<header>
+  <div class="w navbar">
+    <a class="logo" href="/"><span class="logo-img-slot"></span><span class="logo-txt">Le Comptoir des Belles Saveurs<small>Sur commande uniquement</small></span></a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="/">Accueil</a><a href="/sucres">Beignets sucrés</a><a href="/sales">Beignets salés</a><a href="/fatayas">Fatayas</a><a href="/jus">Jus naturels</a><a href="/evenements" class="active">Événements</a><a href="/apropos">À propos</a><a href="/contact">Contact</a>
+      <a href="/contact" class="nav-cta">Commander&nbsp;<span id="cart-count" style="background:rgba(255,255,255,.25);border-radius:999px;padding:1px 7px;font-size:.75rem">0</span></a>
+    </nav>
+    <button id="menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-mobile">☰</button>
+  </div>
+  <nav class="nav-mobile" id="nav-mobile" aria-label="Menu mobile">
+    <a href="/">Accueil</a><a href="/sucres">Beignets sucrés</a><a href="/sales">Beignets salés</a><a href="/fatayas">Fatayas</a><a href="/jus">Jus naturels</a><a href="/evenements" class="active">Événements</a><a href="/apropos">À propos</a><a href="/contact">Contact / Commander</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- Hero événements -->
+  <div style="background:linear-gradient(135deg,var(--marron-h),var(--marron));color:var(--creme);padding:48px 0 40px;border-radius:0 0 28px 28px">
+    <div class="w">
+      <div class="breadcrumb" style="color:rgba(255,255,255,.6)"><a href="/" style="color:var(--creme-card)">Accueil</a> › <span>Commandes pour événements</span></div>
+      <h1 style="color:#fff;margin-top:8px">🎉 Commandes pour événements</h1>
+      <p style="opacity:.9;max-width:580px">Particuliers, associations, entreprises et organisateurs : décrivez votre projet. Nous confirmons la faisabilité, les prix définitifs, les délais et les modalités.</p>
+      <div class="tags-row">
+        <span class="tag" style="background:rgba(255,255,255,.15)">🎂 Anniversaires</span>
+        <span class="tag" style="background:rgba(255,255,255,.15)">💍 Mariages</span>
+        <span class="tag" style="background:rgba(255,255,255,.15)">🍼 Baptêmes</span>
+        <span class="tag" style="background:rgba(255,255,255,.15)">👨‍👩‍👧‍👦 Réunions familiales</span>
+        <span class="tag" style="background:rgba(255,255,255,.15)">🎉 Cérémonies</span>
+        <span class="tag" style="background:rgba(255,255,255,.15)">🏢 Réunions d'entreprise</span>
+        <span class="tag" style="background:rgba(255,255,255,.15)">✨ Autres événements</span>
+      </div>
+      <div class="btn-row" style="margin-top:20px">
+        <a class="btn btn-w" id="wa-ev-btn" href="/contact" style="display:none">💬 Contacter par WhatsApp</a>
+        <a class="btn btn-olw" href="#formulaire">📋 Demander un devis</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pourquoi commander pour un événement -->
+  <section>
+    <div class="w">
+      <h2>Pourquoi commander chez nous pour votre événement ?</h2>
+      <div class="commit-grid">
+        <div class="commit-card"><div class="commit-icon">🍽</div><h4>Beignets, fatayas &amp; jus</h4><p>Toutes nos spécialités disponibles en grande quantité : beignets sucrés, salés, fatayas et jus naturels.</p></div>
+        <div class="commit-card"><div class="commit-icon">📋</div><h4>Devis personnalisé</h4><p>Envoyez votre demande, nous vous confirmons disponibilité, prix final et délais avant toute validation.</p></div>
+        <div class="commit-card"><div class="commit-icon">⏱</div><h4>Préparation dédiée</h4><p>Chaque commande événementielle est préparée spécialement pour votre occasion.</p></div>
+        <div class="commit-card"><div class="commit-icon">💰</div><h4>Tarif adapté</h4><p>Prix ajustés pour les grandes quantités. Frais de livraison et modalités précisés dans le devis.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulaire -->
+  <section class="alt" id="formulaire">
+    <div class="w">
+      <h2>📋 Formulaire de demande de devis</h2>
+      <p style="color:var(--txt-sec);margin-bottom:8px">Remplissez ce formulaire — l'entreprise vous répondra pour confirmer disponibilité, prix et délais.</p>
+
+      <div class="note">
+        <strong>⏱ Préparation exclusivement sur commande.</strong>
+        Cette demande n'est pas une confirmation. L'entreprise examinera votre projet et vous confirmera tout avant validation définitive.
+      </div>
+
+      <form id="order-form" novalidate class="form-box" data-ev="1" style="margin-top:20px">
+        <div class="hp" aria-hidden="true"><input name="website" tabindex="-1" autocomplete="off"></div>
+
+        <h3 style="margin-top:0">Produits souhaités</h3>
+        <div class="form-group">
+          <label class="lbl" for="ps">Ajouter un produit du catalogue</label>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+            <div style="flex:1;min-width:200px"><select id="ps"><option value="">Choisir un produit…</option></select></div>
+            <input class="qty-input" id="pq" type="number" min="1" value="1" aria-label="Quantité">
+            <button type="button" class="btn btn-m btn-sm" id="add-prod-btn">Ajouter</button>
+          </div>
+        </div>
+        <div id="recap-wrap" style="margin:8px 0"></div>
+        <div class="form-group">
+          <label class="lbl" for="extra">Produits ou quantités supplémentaires</label>
+          <textarea id="extra" name="extra" rows="2" placeholder="Ex. : 100 beignets sucrés, 50 fatayas au poulet, 20 jus de bissap 1,5 L…"></textarea>
+        </div>
+
+        <h3>Vos coordonnées</h3>
+        <div class="form-row2">
+          <div class="form-group">
+            <label class="lbl" for="f-nom">Nom et prénom <span class="req">*</span></label>
+            <input id="f-nom" name="nom" autocomplete="name">
+            <div class="f-errmsg" id="e2nom"></div>
+          </div>
+          <div class="form-group">
+            <label class="lbl" for="f-tel">Téléphone / WhatsApp <span class="req">*</span></label>
+            <input id="f-tel" name="tel" type="tel" autocomplete="tel">
+            <div class="f-errmsg" id="e2tel"></div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="lbl" for="f-mail">E-mail <span style="font-weight:400;color:var(--txt-sec)">(facultatif)</span></label>
+          <input id="f-mail" name="mail" type="email" autocomplete="email">
+          <div class="f-errmsg" id="e2mail"></div>
+        </div>
+
+        <h3>Votre événement</h3>
+        <div class="form-row2">
+          <div class="form-group">
+            <label class="lbl" for="f-type">Type d'événement <span class="req">*</span></label>
+            <select id="f-type" name="type">
+              <option value="">Choisir…</option>
+              <option>Anniversaire</option><option>Mariage</option><option>Baptême</option>
+              <option>Réunion familiale</option><option>Cérémonie</option>
+              <option>Réunion d'entreprise</option><option>Autre</option>
+            </select>
+            <div class="f-errmsg" id="e2type"></div>
+          </div>
+          <div class="form-group">
+            <label class="lbl" for="f-nb">Nombre de participants (approx.)</label>
+            <input id="f-nb" name="nb" type="number" min="1" placeholder="ex. 80">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="lbl" for="f-bud">Budget indicatif <span style="font-weight:400;color:var(--txt-sec)">(facultatif)</span></label>
+          <input id="f-bud" name="bud" placeholder="ex. 150 000 FCFA">
+        </div>
+
+        <h3>Date et réception</h3>
+        <div class="form-row2">
+          <div class="form-group">
+            <label class="lbl" for="f-date">Date souhaitée <span class="req">*</span></label>
+            <input id="f-date" name="date" type="date">
+            <div class="f-errmsg" id="e2date"></div>
+          </div>
+          <div class="form-group">
+            <label class="lbl" for="f-heure">Heure souhaitée</label>
+            <input id="f-heure" name="heure" type="time">
+          </div>
+        </div>
+        <div class="form-group" id="mode-wrap" style="display:none">
+          <label class="lbl" for="f-mode">Mode de réception</label>
+          <select id="f-mode" name="mode"><option>Retrait</option><option>Livraison</option></select>
+          <label class="lbl" for="f-adr" style="margin-top:8px">Adresse de livraison</label>
+          <input id="f-adr" name="adr" autocomplete="street-address">
+        </div>
+
+        <div class="form-group" style="margin-top:4px">
+          <label class="lbl" for="f-msg">Demandes particulières <span style="font-weight:400;color:var(--txt-sec)">(facultatif)</span></label>
+          <textarea id="f-msg" name="msg" rows="3" placeholder="Précisions sur l'événement, demandes spéciales, contraintes de livraison…"></textarea>
+        </div>
+
+        <div class="btn-row" style="margin-top:20px">
+          <button class="btn" type="submit" id="submit-btn">📋 Envoyer ma demande de devis</button>
+        </div>
+        <div id="form-result" role="status" aria-live="polite" style="margin-top:14px"></div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="w">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <strong>Le Comptoir des Belles Saveurs</strong>
+        <p>Le goût du bonheur, à chaque bouchée !<br>Tous nos produits sont préparés exclusivement sur commande.</p>
+        <div class="social-row" id="footer-social"></div>
+      </div>
+      <div class="footer-col">
+        <h4>Nos spécialités</h4>
+        <a href="/sucres">Beignets sucrés</a><a href="/sales">Beignets salés</a><a href="/fatayas">Fatayas</a><a href="/jus">Jus naturels</a><a href="/evenements">Commandes événementielles</a>
+      </div>
+      <div class="footer-col">
+        <h4>Informations</h4>
+        <a href="/">Accueil</a><a href="/apropos">À propos</a><a href="/contact">Contact / Commander</a><a href="/legal">Mentions légales</a>
+      </div>
+      <div class="footer-col"><h4>Contact</h4><p id="footer-contact-info">Coordonnées à compléter</p></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="yr"></span> Le Comptoir des Belles Saveurs</span>
+      <a href="/legal" style="color:inherit">Mentions légales &amp; confidentialité</a>
+    </div>
+  </div>
+</footer>
+<a id="wa-float" href="/contact" aria-label="WhatsApp">💬</a>
+<script src="/app.js"></script>
+</body>
+</html>
